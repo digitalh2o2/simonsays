@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="simon.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="master.css">
+    <title>Simon Says</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Simon Says</h1>
+          <div id="main-circle">
+            <span id="buttons"><button type="button" id="start" class="btn btn-primary">Start</button>
+              <span id="displayCounter">--</span>
+              <button type="button" id="resetButton" class="btn btn-danger">Reset</button>
+            </span>
+            <div id="strictButton">
+              <input type="radio" id="strict" name="Strict" checked="checked" data-waschecked="true">
+              <label for="strict"><span></span>Strict Mode</label>
+            </div>
+
+            <div id="onButton">
+              <input type="radio" id="on" name="On" checked="checked" data-waschecked="true">
+              <label for="on"><span></span>Power On</label>
+            </div>
+            <div class="green rectangle" id='0'></div>
+            <div class="red rectangle" id='1'></div>
+            <div class="menu"></div>
+            <div class="yellow rectangle" id='2'></div>
+            <div class="blue rectangle" id='3'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
